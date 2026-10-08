@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: Helvetica;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: var(--secondary-bg);
     color: var(--secondary-text);
 }
@@ -23,7 +23,7 @@ h2 {
     color: var(--secondary-text);
     margin-left: 1em;
     margin-right: 1em;
-    border-bottom: 2px solid var(--secondary-text)
+    border-bottom: 2px solid var(--secondary-text);
 }
 
 h3 {
@@ -39,6 +39,10 @@ p {
     margin-left: 1.5em;
     margin-right: 1.5em;
     color: var(--secondary-text);
+}
+
+img {
+    margin: 1.5em;
 }
 
 #about {
@@ -63,4 +67,38 @@ p {
     border-radius: 15px;
     margin: 1em;
     padding: 0.5em;
+}
+
+nav {
+    background: var(--boxes);
+    border-radius: 25px;
+    width: fit-content;
+    margin: 10px auto 0;
+}
+
+nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none; 
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: var(--secondary-text);
+    font-size: 2em;
+    padding: 10px;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
 }
