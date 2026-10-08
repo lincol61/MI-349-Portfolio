@@ -1,16 +1,16 @@
 :root {
-    --primary-bg: #e8eae7;
-    --primary-text: #040f0f;
-    --secondary-h1: #c7c7c7;
-    --secondary-bg: #121816;
+    --secondary-bg: #102d27;
+    --secondary-text: #ffffff;
+    --secondary-h1: #847577;
+    --primary-bg: #121816;
     --boxes: #18453b;
-    --secondary-text: #FFFFFF;
+    --primary-text: #FFFFFF;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: var(--secondary-bg);
-    color: var(--secondary-text);
+    background: var(--primary-bg);
+    color: var(--primary-text);
 }
 
 h1 {
@@ -20,15 +20,15 @@ h1 {
 
 h2 {
     font-size: 2em;
-    color: var(--secondary-text);
+    color: var(--primary-text);
     margin-left: 1em;
     margin-right: 1em;
-    border-bottom: 2px solid var(--secondary-text);
+    border-bottom: 2px solid var(--primary-text);
 }
 
 h3 {
     font-size: 1.5em;
-    color: var(--secondary-text);
+    color: var(--primary-text);
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -38,7 +38,7 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 1.5em;
     margin-right: 1.5em;
-    color: var(--secondary-text);
+    color: var(--primary-text);
 }
 
 img {
@@ -93,10 +93,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--secondary-text);
+    color: var(--primary-text);
     font-size: 2em;
     padding: 10px;
     display: inline-block;
+}
+
+nav ul li a:hover {
+    background: color-mix(in oklab,var(--boxes), black 10%);
 }
 
 footer {
