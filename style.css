@@ -61,6 +61,57 @@ img {
     padding: 0.5em;
 }
 
+#work {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1em;
+}
+
+#work h2 {
+    grid-column: span 3 / span 3;
+}
+/* I asked AI "my networking article goes outside of my box on the right side, how do I fix that?" and it added this to the file... and it works! so I guess I'm keeping it.*/
+#work article img {
+    max-width: calc(100% - 3em);
+    height: auto;
+}
+
+@media (min-width: 350px) {
+    #work {
+        display:grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 1em;
+    }
+
+    #work h2 {
+        grid-column: span 1 / span 1;
+    }
+}
+
+@media (min-width: 600px) {
+    #work {
+        display:grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1em;
+    }
+
+    #work h2 {
+        grid-column: span 2 / span 2;
+    }
+}
+
+@media (min-width: 1000px) {
+    #work {
+        display:grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1em;
+    }
+
+    #work h2 {
+        grid-column: span 3 / span 3;
+    }
+}
+
 #contact {
     background: var(--boxes);
     display: block;
@@ -82,14 +133,13 @@ nav a {
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     list-style-type: none; 
     margin: 10px;
     padding: 10px;
     text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
 }
 
 nav ul li a {
