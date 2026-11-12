@@ -1,10 +1,13 @@
 :root {
-    --secondary-bg: #102d27;
-    --secondary-text: #ffffff;
-    --secondary-h1: #847577;
     --primary-bg: #121816;
     --boxes: #18453b;
-    --primary-text: #FFFFFF;
+    --primary-text: #ffffff;
+}
+
+body.light-mode {
+    --primary-bg: #f6f7f5;
+    --boxes: #e4eee8;
+    --primary-text: #17231f;
 }
 
 body {
@@ -149,8 +152,26 @@ nav ul li a {
     display: inline-block;
 }
 
-nav ul li a:hover {
+#theme-toggle {
+    display: block;
+    margin: 1em auto;
+    color: var(--primary-text);
+    background: var(--boxes);
+    border: 1px solid var(--primary-text);
+    border-radius: 25px;
+    font: inherit;
+    font-weight: bold;
+    padding: 0.6em 1em;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
     background: color-mix(in oklab,var(--boxes), black 10%);
+}
+
+#theme-toggle:focus-visible {
+    outline: 2px solid var(--primary-text);
+    outline-offset: 2px;
 }
 
 footer {
